@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Matriz Dinâmica de Competências</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" href="icone.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header class="header">
+            <h1>Matriz de Competências</h1>
+            <p>RH Dashboard</p>
+        </header>
+
+        <section class="summary-cards">
+            <div class="card" style="border-left-color: #00aaff;">
+                <h2>Total de Competências</h2>
+                <p class="value">25</p>
+            </div>
+            <div class="card" style="border-left-color: #00e676;">
+                <h2>Nível Médio de Proficiência</h2>
+                <p class="value">7.8</p>
+            </div>
+            <div class="card" style="border-left-color: #ffea00;">
+                <h2>Competência em Destaque</h2>
+                <p class="value" style="font-size: 1.5rem;">Liderança</p>
+            </div>
+        </section>
+
+        <section class="charts-grid">
+            <div class="chart-container">
+                <h2>Níveis de Proficiência</h2>
+                <div id="radar-chart"></div>
+            </div>
+            <div class="chart-container">
+                <h2>Proficiência Geral da Equipe</h2>
+                <div id="donut-chart"></div>
+            </div>
+             <div class="chart-container full-width-chart">
+                <h2>Distribuição de Competências por Equipe</h2>
+                <div id="bar-chart"></div>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <p>Feito por <a href="https://github.com/Matz-Turing" target="_blank" rel="noopener noreferrer">Mateus S.</a></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="script.js"></script>
+</body>
+</html>
